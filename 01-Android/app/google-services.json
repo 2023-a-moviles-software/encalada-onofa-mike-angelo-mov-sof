@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1072393234003",
+    "project_id": "a-moviles-software-me",
+    "storage_bucket": "a-moviles-software-me.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1072393234003:android:fd33c03c7db5bb06a588a6",
+        "android_client_info": {
+          "package_name": "com.example.softwaremoviles2023a_me"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxWcS7OTNNaHN3ew0R_emftrKxgbbkS0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
