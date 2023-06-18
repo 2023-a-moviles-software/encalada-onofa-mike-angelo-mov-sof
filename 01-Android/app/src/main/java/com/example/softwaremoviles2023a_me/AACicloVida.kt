@@ -1,6 +1,7 @@
 package com.example.softwaremoviles2023a_me
 
 import android.os.Bundle
+import android.os.PersistableBundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -14,9 +15,21 @@ class AACicloVida : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityAacicloVidaBinding
 
+    //Servirá para ir mostrando en la pantalla el estado de la actividad "onCreate, onStop ..."
+    var textoGlobal = ""
+
+    fun mostrarSnackbar(texto: String){
+        textoGlobal += texto
+        Snackbar.make(
+            findViewById(R.id.cl_ciclo_vida),
+            textoGlobal,
+            Snackbar.LENGTH_LONG
+        ).setAction("Action", null).show()
+
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityAacicloVidaBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -30,6 +43,62 @@ class AACicloVida : AppCompatActivity() {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
+        mostrarSnackbar("onCreate")
+    }
+
+
+    override fun onStart() {
+        super.onStart()
+        mostrarSnackbar("onStart")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        mostrarSnackbar("onResume")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        mostrarSnackbar("onRestart")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        mostrarSnackbar("onPause")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        mostrarSnackbar("onStop")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        mostrarSnackbar("onDestroy")
+    }
+
+    //Guardar
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.run {
+            // GUARDAR LAS VARIABLES
+            // PRIMITIVAS
+            putString("variableTextoGuardado", textoGlobal)
+        }
+        super.onSaveInstanceState(outState)
+    }
+
+    //Recuperar
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        //RECUPERAR VARIABLES
+        //PRIMITIVAS
+        val textoRecuperado: String? = savedInstanceState.getString("variableTextoGuardado")
+        if(textoRecuperado != null){
+            mostrarSnackbar(textoRecuperado)
+            textoGlobal = textoRecuperado
+        }
+
     }
 
     override fun onSupportNavigateUp(): Boolean {
