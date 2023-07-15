@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "961937240149",
+    "project_id": "examen-moviles-2023a",
+    "storage_bucket": "examen-moviles-2023a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961937240149:android:2c400a22f4f0a06201a4dc",
+        "android_client_info": {
+          "package_name": "com.example.examen_moviles_2023a"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "961937240149-ju4vdkbt76v6g28fh43k6050akf66ooc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDacypdDNwCUsr5C51wROraf-mg2VjqXC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "961937240149-ju4vdkbt76v6g28fh43k6050akf66ooc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
