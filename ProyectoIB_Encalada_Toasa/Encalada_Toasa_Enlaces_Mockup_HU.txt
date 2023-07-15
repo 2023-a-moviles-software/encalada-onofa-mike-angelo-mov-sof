@@ -1,0 +1,7 @@
+Nombres: Mike Encalada, Kevin Toasa
+
+Link Mockup:
+https://www.figma.com/file/wm4QhIwljyKyEqi0Dpvw1g/Wireframe?type=design&node-id=0%3A1&mode=design&t=ndqzfvtOD9crPwcL-1
+
+Link HU (Jira Software):
+https://kevintoasa.atlassian.net/jira/software/c/projects/PMTE/boards/5/backlog?versions=visible&epics=visible&issueLimit=100&selectedEpic=PMTE-3&atlOrigin=eyJpIjoiNzlkYzdjZjI4MjYxNDZmMTk3NjMwZGQyMjcxM2RmMWUiLCJwIjoiaiJ9
