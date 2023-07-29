@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/border_with_margin">
+
+    <ImageView
+        android:id="@+id/iv_imagenPost"
+        android:layout_width="380dp"
+        android:layout_height="168dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.722"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <Button
+        android:id="@+id/btn_unirse"
+        android:layout_width="81dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="36dp"
+        android:text="Unirse"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_imagenPost"
+        app:layout_constraintEnd_toEndOf="@+id/iv_imagenPost"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/iv_imagenPost" />
+
+    <TextView
+        android:id="@+id/tv_horasPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="3h"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_userName"
+        app:layout_constraintStart_toEndOf="@+id/tv_userName"
+        app:layout_constraintTop_toTopOf="@+id/tv_userName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:text="username"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_imagenPost"
+        app:layout_constraintEnd_toEndOf="@+id/iv_imagenPost"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="@+id/iv_imagenPost" />
+
+    <TextView
+        android:id="@+id/tv_numShares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="335"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_numComments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="335"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_numLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="335"
+        android:textSize="9sp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_imagenPost"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="@+id/iv_imagenPost"
+        app:layout_constraintTop_toBottomOf="@+id/iv_imagenPost" />
+
+    <TextView
+        android:id="@+id/tv_descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="TextView"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_imagenPost"
+        app:layout_constraintEnd_toEndOf="@+id/iv_imagenPost"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iv_imagenPost" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_userName"
+        app:layout_constraintEnd_toStartOf="@+id/tv_userName"
+        app:layout_constraintTop_toTopOf="@+id/tv_userName"
+        app:srcCompat="@drawable/baseline_circle_24" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_numLikes"
+        app:layout_constraintEnd_toStartOf="@+id/tv_numLikes"
+        app:layout_constraintTop_toTopOf="@+id/tv_numLikes"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/up_icon" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_numLikes"
+        app:layout_constraintStart_toEndOf="@+id/tv_numLikes"
+        app:layout_constraintTop_toTopOf="@+id/tv_numLikes"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/down_icon" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/comment_icon" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_numComments"
+        app:layout_constraintStart_toEndOf="@+id/tv_numComments"
+        app:layout_constraintTop_toTopOf="@+id/tv_numComments"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/share_icon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

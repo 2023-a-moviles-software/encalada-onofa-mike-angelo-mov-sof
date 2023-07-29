@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="cianButton">#FF7DAEEF</color>
+    <color name="tituloSearchItem">#FF2B28F4</color>
+</resources>
