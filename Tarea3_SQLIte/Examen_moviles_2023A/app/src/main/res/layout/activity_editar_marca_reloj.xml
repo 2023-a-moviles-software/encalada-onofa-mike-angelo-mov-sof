@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarMarcaReloj">
+
+    <EditText
+        android:id="@+id/ptxt_nombre_mr"
+        android:layout_width="297dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/ptxt_paisorigen_mr"
+        app:layout_constraintEnd_toEndOf="@+id/ptxt_paisorigen_mr"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ptxt_paisorigen_mr" />
+
+
+    <EditText
+        android:id="@+id/ptxt_paisorigen_mr"
+        android:layout_width="295dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:hint="Pais de Origen"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/dtxt_fechafun_mr"
+        app:layout_constraintEnd_toEndOf="@+id/dtxt_fechafun_mr"
+        app:layout_constraintStart_toStartOf="@+id/dtxt_fechafun_mr" />
+
+    <EditText
+        android:id="@+id/ntxt_rating_mr"
+        android:layout_width="294dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Rating"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/dtxt_fechafun_mr"
+        app:layout_constraintStart_toStartOf="@+id/dtxt_fechafun_mr"
+        app:layout_constraintTop_toBottomOf="@+id/dtxt_fechafun_mr" />
+
+    <Button
+        android:id="@+id/btn_editar_mr"
+        android:layout_width="114dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="100dp"
+        android:text="Editar"
+        app:layout_constraintEnd_toEndOf="@+id/ntxt_rating_mr"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/ntxt_rating_mr"
+        app:layout_constraintTop_toBottomOf="@+id/ntxt_rating_mr" />
+
+    <EditText
+        android:id="@+id/dtxt_fechafun_mr"
+        android:layout_width="288dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:hint="Fecha Fundacion"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.423" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
