@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarReloj">
+
+    <Button
+        android:id="@+id/btn_editar_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Editar"
+        app:layout_constraintEnd_toEndOf="@+id/txt_edit_fecha_r"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/txt_edit_fecha_r"
+        app:layout_constraintTop_toBottomOf="@+id/txt_edit_fecha_r" />
+
+    <EditText
+        android:id="@+id/txt_edit_modelo_r"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="64dp"
+        android:ems="10"
+        android:hint="Modelo"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/txt_edit_precio_r"
+        app:layout_constraintEnd_toEndOf="@+id/txt_edit_precio_r"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_edit_precio_r" />
+
+    <EditText
+        android:id="@+id/txt_edit_precio_r"
+        android:layout_width="303dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="60dp"
+        android:ems="10"
+        android:hint="Precio"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/txt_edit_fecha_r"
+        app:layout_constraintEnd_toEndOf="@+id/txt_edit_fecha_r"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_edit_fecha_r" />
+
+    <EditText
+        android:id="@+id/txt_edit_fecha_r"
+        android:layout_width="302dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:hint="Fecha Fabricacion"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
