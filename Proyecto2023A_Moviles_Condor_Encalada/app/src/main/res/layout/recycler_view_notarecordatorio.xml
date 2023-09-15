@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_rvnr_tituloE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="Nota 1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_rvnr_descripcionE"
+        app:layout_constraintEnd_toEndOf="@+id/tv_rvnr_descripcionE"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_rvnr_descripcionE" />
+
+    <TextView
+        android:id="@+id/tv_rvnr_descripcionT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Descripción:"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_rvnr_descripcionE"
+        app:layout_constraintEnd_toEndOf="@+id/tv_rvnr_descripcionE"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_rvnr_descripcionE" />
+
+    <TextView
+        android:id="@+id/tv_rvnr_descripcionE"
+        android:layout_width="333dp"
+        android:layout_height="192dp"
+        android:background="@drawable/border_background"
+        android:gravity="top|start"
+        android:padding="16dp"
+        android:scrollbars="vertical"
+        android:text="Descripción aquí.."
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.487" />
+
+    <TextView
+        android:id="@+id/tv_rvnr_categoriaT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Categoría:"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_rvnr_descripcionE"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_rvnr_descripcionE"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rvnr_descripcionE" />
+
+    <TextView
+        android:id="@+id/tv_rvnr_categoriaE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Categoria1"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_rvnr_categoriaT"
+        app:layout_constraintStart_toEndOf="@+id/tv_rvnr_categoriaT"
+        app:layout_constraintTop_toTopOf="@+id/tv_rvnr_categoriaT"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/iv_rvnr_eliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_rvnr_descripcionE"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_rvnr_descripcionE"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rvnr_descripcionE"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <ImageView
+        android:id="@+id/im_rvnr_editar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_rvnr_descripcionE"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="@+id/tv_rvnr_descripcionE"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rvnr_descripcionE"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <TextView
+        android:id="@+id/tv_rvnr_recordatorioT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Recordatorio:"
+        app:layout_constraintEnd_toEndOf="@+id/tv_rvnr_categoriaT"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_rvnr_categoriaT"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rvnr_categoriaT" />
+
+    <TextView
+        android:id="@+id/tv_rvnr_recordatorioE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="00/00/00 00:00"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_rvnr_recordatorioT"
+        app:layout_constraintStart_toEndOf="@+id/tv_rvnr_recordatorioT"
+        app:layout_constraintTop_toTopOf="@+id/tv_rvnr_recordatorioT"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
